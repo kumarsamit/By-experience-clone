@@ -1,0 +1,77 @@
+@import "main";
+@import "common";
+.connect-info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    .lets-talk{
+        width: 100%;
+        max-width: 520px;
+        margin: auto;
+        padding: 10px;
+        
+        h1{
+            @include primary-heading();
+            font-size: 58px !important;
+            margin: 0
+
+        }
+        p{
+            @include para-info();
+            font-weight: 300;
+            color: #ccc !important;
+        }
+        form{
+            margin-top: 30px;
+            width: 100%;
+
+            input{
+                border: white;
+                background: #fff;
+                padding-left: 10px;
+                width: 49%;
+                height: 50px;
+                margin: auto;
+                font-family: $font1;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+            textarea{
+                border: white;
+                background: #fff;
+                padding: 10px;
+                width: 99%;
+                margin-top: 10px;
+                font-family: $font1;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+            p{
+                text-align: center;
+                margin-top: 20px;
+
+                a{
+                    background: #fff;
+                    padding: 10px 40px;
+                    color: dodgerblue;
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:900px){
+    .lets-talk h1{
+        font-size: 48px !important;
+    
+    }
+}
